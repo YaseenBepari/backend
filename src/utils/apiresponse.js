@@ -5,4 +5,4 @@ class apiresponse{
         this.messege=messege;
         this.success=statusCode<400;
     }
-}
+} 
