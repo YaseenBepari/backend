@@ -2,13 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "a backend with yaseen",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
+ 
   "scripts": {
-    "dev": "nodemon src/index.js"
-  },
-
-  "keywords": [
+  "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+},
+ "keywords": [
     "javascript",
     "backend",
     "chai"
@@ -16,6 +16,12 @@
   "author": "yaseen",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
   }
 }
